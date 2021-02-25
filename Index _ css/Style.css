@@ -1,0 +1,410 @@
+/*DOCUMENT INFORMATION 
+- Document: La Maison Du Chocolat
+- Version: 1.0.0
+- Author: Romain
+*/
+
+/* COLORS
+- defaut body text    black
+- h1                  black & #f227cb
+- h2                  white
+- h3
+
+- button              #f227cb       
+- button:hover        white    
+
+
+*/
+
+/*FONTS
+- default:            LATO          
+
+*/
+
+/* CSS DIRECTORY
+1. GLOBAL
+2. RESPONSIVE
+3. MENU
+4. IMAGE ACCEUIL
+5. BUTTON
+6. PLUS D'INFOS
+7. CONTACTEZ-NOUS
+8. FOOTER
+
+*/
+
+
+/* GLOBAL
+======================================*/
+
+html {
+    background-color: ;
+    font-family: 'Source Serif Pro', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Serif Pro', serif;
+}
+
+h1 {
+    color: #000000;
+    letter-spacing: -2px;
+    font-weight: 800;
+    word-spacing: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+h1 span {
+    color: #f227cb;
+}
+
+h5 {
+    text-transform: uppercase;
+    font-size: 150%;
+    text-align: center;
+}
+
+h5:after {
+    display: block;
+    height: 2px;
+    background-color: #05cdfe;
+    width: 300px;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+h6 {
+    color: #ffffff;
+    letter-spacing: -2px;
+    font-weight: 800;
+    word-spacing: 2px;
+    font-size: 160%;
+}
+
+h6 span {
+    color: #f227cb;
+}
+
+p {
+    text-align: center;
+}
+
+
+/* RESPONSIVE
+====================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width:600px) {
+
+    .logo {
+        float: left;
+        margin-left: 100px;
+    }
+
+    .menu {
+        margin-bottom: 10px;
+    }
+
+    .labell {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .ecologie {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button {
+        float: right;
+    }
+
+    #test {
+        margin-top: 60px;
+        background-color: #bab8b8;
+        height: 40vh;
+        display: flex;
+    }
+
+    .background-box {
+        display: flex;
+        flex-direction: row
+    }
+    
+    .box {
+        position: absolute;
+        top: 1000px;
+        left: 100px
+    }
+
+    .actus {
+        position: absolute;
+        top: 1000px;
+        right: 100px;
+    }
+    
+    button {
+        position: relative;
+        left: 200px;
+        bottom: 100px;
+    }
+
+}
+
+/* MENU
+====================================*/
+
+.menu {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 80%;
+}
+
+li {
+    float: left;
+    padding: 10px;
+}
+
+ul li a {
+    display: block;
+    width: auto;
+    line-height: 15px;
+    background: white;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li a:hover {
+    background: #f227cb;
+    color: white;
+    border-radius: 5px;
+}
+
+.stop-float {
+    clear: both;
+}
+
+/* IMAGE ACCUEIL
+==================================*/
+
+.img-accueil {
+    background-image: url(../Ressources/images/main.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.home-title h2 {
+    color: aliceblue;
+    font-size: 150%;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.home-title h3 {
+    color: aliceblue;
+    font-size: 200%;
+    font-weight: 800;
+}
+
+
+/* BUTTON
+==================================*/
+
+.btn a {
+    text-decoration: none;
+    transition: background-color 1s, color 1s, border 1s;
+    width: 100px;
+    margin: 0 auto;
+    background-color: #f227cb;
+    color: #ffffff;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn a:hover {
+    background-color: #ffffff;
+    color: #f227cb;
+}
+
+/* ICONES
+==================================*/
+
+.qualite {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+
+.ecologie {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+
+.equitable {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+
+/* PLUS D'INFOS
+==================================*/
+
+.background-box {
+    margin-top: 60px;
+    background-color: #bab8b8;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 20px;
+}
+
+.box-club {
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    width: 150px;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#index1 {
+    position: relative;
+    z-index: 1;
+}
+
+div#index2 {
+    position: absolute;
+    z-index: 2;
+}
+
+.nosactus {
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    width: 150px;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#index3 {
+    position: relative;
+    z-index: 1;
+}
+
+div#index4 {
+    position: absolute;
+    z-index: 2;
+}
+
+
+
+/* CONTACTEZ-NOUS
+==================================*/
+
+ul {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+li {
+    display: inline-block;
+}
+
+select {
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+button {
+    text-decoration: none;
+    width: 60px;
+    margin: 0 auto;
+    background-color: #f227cb;
+    color: #ffffff;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    border-radius: 5px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact ul {
+    margin-left: 120px;
+}
+
+
+
+/* FOOTER
+==================================*/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: stretch;
+}
